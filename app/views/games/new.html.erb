@@ -1,0 +1,9 @@
+<h1>NEW GAME</h1>
+<% @letter.each do |letter| %>
+<p> <%= @letter %> </p>
+<% end %>
+
+<form action="/answer" data-turbo="false">
+  <input type="text" name="your guess!">
+  <input type="submit" value="Ask!">
+</form>
